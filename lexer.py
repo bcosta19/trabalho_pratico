@@ -46,36 +46,3 @@ def lexer(source_code: str) -> List[Token]:
         tokens.append(Token(kind, value, line_num, column))
     
     return tokens
-#
-# codigo_exemplo = """if (x > 10) {
-#     return x + 1;
-# } else {
-#     return 0;
-# }
-# // Isso é um comentário"""
-#
-#
-# codigo = """class Factorial{
-# public static void main(String[] a){
-# System.out.println(new Fac().ComputeFac(10));
-# }
-# }
-# class Fac {
-# public int ComputeFac(int num){
-# int num_aux;
-# if (num < 1)
-# num_aux = 1;
-# else
-# num_aux = num * (this.ComputeFac(num-1));
-# return num_aux ;
-# }
-# }"""
-#
-# tokens = lexer(codigo)
-#
-# print("Tokens:")
-# for token in tokens:
-#     print(token)
-
-
-
